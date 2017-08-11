@@ -1,0 +1,700 @@
+.hot {
+    background-image: url(../../../images/PC/1.0/xiaoguotu-index/HOT.png);
+    background-repeat: no-repeat;
+    color: red;
+}
+
+/*热门*/
+
+.dbt {
+    width: auto;
+    height: auto;
+}
+.dbt p {
+    width: 300px;
+    height: 30px;
+    margin: 20px auto 5px;
+}
+.dbt p em {
+    display: inline-block;
+    font-size: 2em;
+    color: #000;
+    letter-spacing: 1em;
+    background-image: url(../../../images/PC/1.0/xiaoguotu-index/fengefu.png);
+    background-repeat: no-repeat;
+    background-position: 89%;
+    width: 25%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.dbt p em:last-child {
+    background-image: none;
+}
+.dbt span {
+    display: block;
+    width: 230px;
+    height: 17px;
+    background-color: #d3d3d4;
+    text-align: center;
+    margin: 0 auto;
+    -webkit-transform: translate(-12px);
+    transform: translate(-12px);
+}
+
+/*大标题*/
+
+.banner {
+    width: 100%;
+    height: 398px;
+    border-top: 2px solid #008b50;
+    position: relative;
+}
+.banner .bannerimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../../images/PC/1.0/xiaoguotu-index/banner.jpg);
+    background-repeat: no-repeat;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide a img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-button-prev{
+    background-image: url(../../../images/PC/1.0/common/swiper-pre.png)!important;
+}
+.swiper-button-next{
+    background-image: url(../../../images/PC/1.0/common/swiper-next.png)!important;
+}
+.swiper-pagination-bullet-active{
+    background-color: #008b50!important;
+}
+.banner .menubox {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.banner .menubox .menu {
+    width: 300px;
+    height: 100%;
+    background-color: #FFF;
+    opacity: 1;
+    -webkit-filter: opacity(100);
+    filter: opacity(100);
+    position: relative;
+    z-index: 2;
+}
+.banner .menubox .menu .leimu {
+    width: auto;
+    height: auto;
+    padding-top: 15px;
+    background-image: -webkit-linear-gradient(top, #ccc, #ccc);
+    background-image: linear-gradient(to bottom, #ccc, #ccc);
+    background-repeat: no-repeat;
+    background-position: 23% 74%;
+    background-size: 2px 45%;
+    border-bottom: 1px dotted #ccc;
+}
+.banner .menubox .menu .leimu:last-child {
+    border-bottom: none;
+}
+.leimu .leimubt {
+    width: 80px;
+    height: 50px;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 50px;
+    float: left;
+}
+.menubox .menu .leimu>ul {
+    display: block;
+    width: 180px;
+    height: 50px;
+    float: left;
+}
+.menubox .menu .leimu>ul>li {
+    float: left;
+    width: 33%;
+    height: 25px;
+}
+.menubox .menu .leimu>ul>li>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 25px;
+    color: #000;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.menubox .menu .leimu>ul>li>a:hover {
+    color: red;
+}
+.moremenubtn {
+    color: #999;
+    height: 50px;
+    width: 40px;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.moremenubtn:hover {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+    cursor: pointer;
+}
+.moremenubox {
+    position: absolute;
+    width: 370px;
+    height: 394px;
+    background-color: #fff;
+    opacity: 1;
+    -webkit-filter: opacity(0.9);
+    filter: opacity(0.9);
+    border: 2px solid #008b50;
+    top: 0;
+    left: 300px;
+    z-index: 99;
+    display: none;
+}
+.moremenubox h6 {
+    font-size: 1.5em;
+    font-weight: normal;
+    line-height: 30px;
+    padding: 10px 15px 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.moremenubox h6 i {
+    font-size: 0.9em;
+}
+.moremenubox ul {
+    width: 100%;
+    height: auto;
+}
+.moremenubox ul li {
+    display: inline-block;
+    float: left;
+    width: 25%;
+    height: 30px;
+}
+.moremenubox ul li a {
+    color: #000;
+    display: block;
+    line-height: 30px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.1em;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    font-weight: 600;
+}
+.moremenubox ul li a:hover {
+    color: red;
+}
+
+/*以上为banner部分*/
+
+.servicebox {
+    height: auto;
+}
+.service {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
+.service a {
+    display: block;
+    width: 32%;
+    height: auto;
+    margin-left: 1%;
+    float: left;
+}
+.service a:first-child {
+    margin-left: 0;
+}
+.serviceimg {
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    width: 100%;
+    height: 290px;
+    text-align: center;
+    overflow: hidden;
+}
+.serviceimg:hover .fanzuan {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+.fanzuan {
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transition: all 2s;
+    transition: all 2s;
+}
+.fanzuan1 {
+    width: 100%;
+    height: 100%;
+}
+.fanzuan2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    -webkit-transform: translateZ(-1px);
+    transform: translateZ(-1px);
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.fanzuan1 img,
+.fanzuan2 img {
+    width: 100%;
+    height: auto;
+}
+
+/*以上为特色服务部分*/
+
+.jpzt {
+    height: auto;
+    display: block;
+}
+.jpztbox {
+    width: 1200px;
+    height: 636px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 25px;
+}
+.jpztbox .jpztshow {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 2500px;
+    height: 900px;
+    opacity: 0;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform-origin: top;
+    transform-origin: top;
+}
+.jpztbox .on {
+    left: 0;
+    top: 0;
+    width: 1200px;
+    height: 636px;
+    opacity: 1;
+}
+.jpztbox .jpztshow .jpztms {
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    color: #FFF;
+    width: 50%;
+}
+.jpztbox .jpztshow .jpztms h4 {
+    font-size: 2em;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    font-weight: 300;
+}
+.jpztbox .jpztshow .jpztms p {
+    font-size: 1.2em;
+    padding-left: 25px;
+    line-height: 20px;
+    font-weight: 100;
+}
+.jpztbox #pre,
+.jpztbox #next {
+    z-index: 99;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #FFF;
+    padding: 15px 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: 100;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    border-radius: 5px;
+}
+.jpztbox #pre:hover,
+.jpztbox #next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.jpztbox #pre {
+    left: 2%;
+}
+.jpztbox #next {
+    right: 2%;
+}
+
+/*以上为精品专题*/
+
+.jxmtout {
+    width: 100%;
+    height: 710px;
+    background-color: #efefef;
+    margin: 50px 0 15px;
+    padding: 15px 0;
+}
+#mtlx {
+    width: 400px;
+    height: 30px;
+    margin: 10px auto;
+    line-height: 30px;
+    -webkit-transform: translate(-23px, 0);
+    transform: translate(-23px, 0);
+}
+#mtlx span {
+    display: inline-block;
+    height: 30px;
+    width: 48%;
+    margin-left: 4%;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #008b50;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+#mtlx span:first-child {
+    margin-left: 0;
+}
+#mtlx span.on {
+    background-color: #008b50;
+    color: #FFF;
+}
+.jxmtlist {
+    width: 100%;
+    height: 560px;
+    display: none;
+}
+.jxmtlist .jxmtlist-left,
+.jxmtlist .jxmtlist-right {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.jxmtlist .jxmtlist-left,
+.jxmtlist .jxmtlist-right a {
+    display: block;
+    overflow: hidden;
+}
+.jxmtlist .jxmtlist-left {
+    width: 48%;
+    margin-right: 1%;
+}
+.jxmtlist .jxmtlist-left span {
+    display: inline-block;
+    width: 50%;
+    height: 49%;
+    overflow: hidden;
+    background-color: #FFF;
+    float: left;
+    margin-bottom: 12px;
+}
+.jxmtlist .jxmtlist-left span:hover img {
+    -webkit-transform: translate(0, -10px);
+    transform: translate(0, -10px);
+}
+.jxmtlist .jxmtlist-left span:nth-child(odd) {
+    margin-right: 10px;
+    width: 48%;
+}
+.jxmtlist .jxmtlist-left span em {
+    display: inline-block;
+    width: 100%;
+    line-height: 25px;
+    text-indent: 1.5em;
+    position: relative;
+    bottom: -15px;
+}
+.jxmtlist img {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    width: 100%;
+    height: auto;
+}
+.jxmtlist-right img {
+    width: 100%;
+    height: auto;
+}
+.jxmtlist-right span {
+    display: inline-block;
+    background-color: #FFF;
+}
+.jxmtlist-right span:hover img {
+    -webkit-transform: translate(0, -15px);
+    transform: translate(0, -15px);
+}
+.jxmtlist-right span em {
+    display: inline-block;
+    width: 100%;
+    line-height: 25px;
+    text-indent: 1.5em;
+}
+.jxmt .on {
+    display: block;
+}
+
+/*精选美图*/
+
+.jbzw {
+    height: auto;
+}
+.jbzmbox {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-top: 15px;
+}
+.jbzmbox>ul {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+.jbzmbox>ul>li {
+    display: block;
+    width: 24%;
+    height: 273px;
+    float: left;
+    text-align: center;
+    margin-left: 1%;
+    margin-bottom: 10px;
+}
+.jbzmbox>ul>li:nth-child(4n+1) {
+    margin-left: 0;
+}
+.jbzmbox>ul>li:first-child {
+    background-color: #25b6a7;
+}
+.jbzmbox>ul>li:nth-child(5) {
+    background-color: #00af62;
+}
+.jbzmbox>ul>li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: #FFF;
+    position: relative;
+}
+.jbzmbox>ul>li a img {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.jbzmbox>ul>li a:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.jbzmbox>ul>li a span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: auto;
+    height: auto;
+    font-size: 2em;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.jbzmbox>ul>li a span em {
+    display: block;
+    font-size: 0.6em;
+}
+.jbzmbox>ul>li a p {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+}
+
+/*局部之美*/
+
+.jjfgbox {
+    width: 100%;
+    height: 425px;
+    background-color: #efefef;
+    margin: 15px auto;
+    padding: 1px 0;
+}
+.jjfgbox .jjfgshow {
+    margin-top: 15px;
+    width: 100%;
+    height: 303px;
+    overflow: hidden;
+    position: relative;
+}
+.jjfgbox .jjfgshow ul {
+    height: 303px;
+    display: block;
+    width: 20000px;
+    position: absolute;
+    left: 0;
+}
+.jjfgbox .jjfgshow ul li {
+    width: 192px;
+    height: 100%;
+    float: left;
+    margin-right: 10px;
+}
+.jjfgbox .jjfgshow ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.jjfgbox .jjfgshow ul li a>div {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 0px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.jjfgbox .jjfgshow ul li a:hover>div {
+    -webkit-transform: translate(0, -150%);
+    transform: translate(0, -150%);
+}
+.jjfgbox .jjfgshow ul li a img {
+    width: 100%;
+    height: auto;
+}
+.jjfgbox .jjfgshow ul li a>div span {
+    display: block;
+    color: #FFF;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 25px;
+}
+.jjfgbox .jjfgshow ul li a>div em {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #FFF;
+}
+#jjfgcontrol {
+    width: 100%;
+    height: 30px;
+    position: relative;
+}
+#jjfgcontrol .pre,
+#jjfgcontrol .next {
+    line-height: 80px;
+    width: 30px;
+    height: 70px;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    text-align: center;
+    color: #FFF;
+    position: absolute;
+    bottom: 150px;
+    border-radius: 5px;
+}
+#jjfgcontrol .next {
+    right: -35px;
+}
+#jjfgcontrol .pre {
+    left: -35px;
+}
+#jjfgcontrol .pre:hover,
+#jjfgcontrol .next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/*家居风格*/
+
+.gzxgt {
+    height: auto;
+}
+.gzxgt .dbt p em {
+    width: 20%;
+}
+.gzxgt .dbt span {
+    font-size: 0.7em;
+}
+.gzxgtlist {
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    margin-top: 15px;
+    position: relative;
+}
+.gzxgtlist ul {
+    width: 20000px;
+    height: 550px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.gzxgtlist ul li {
+    display: block;
+    width: 291px;
+    height: 100%;
+    margin-right: 10px;
+    float: left;
+}
+.gzxgtlist ul li a {
+    display: block;
+    width: 100%;
+    height: 260px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.gzxgtlist ul li a img {
+    width: 100%;
+    height: auto;
+}
+.gzxgtlist ul li a span {
+    position: absolute;
+    color: #FFF;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: auto;
+    line-height: 30px;
+    text-indent: 1em;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.gzxgtlist ul li a:hover span {
+    font-size: 1.5em;
+    width: 100%;
+    height: 100%;
+    line-height: 291px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*公装效果图*/

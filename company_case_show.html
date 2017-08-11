@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>公用</title>
+    <link rel="stylesheet" href="public/PC/1.0/Font-Awesome-3.2.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/PC/1.0/common.css">
+    <link rel="stylesheet" href="css/PC/1.0/company.css">
+    <link rel="stylesheet" href="public/PC/1.0/animate.min.css">
+    <style type="text/css">
+        .play {
+            width: 100%;
+            height: 650px;
+            font: 12px Arial;
+            margin: 0 auto
+        }
+
+        .big_pic {
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            border-bottom: 1px solid #ccc;
+            background: #222;
+            position: relative;
+        }
+
+        .big_pic li {
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            background: url(images/PC/1.0/company/loading.gif) no-repeat center center;
+        }
+        .big_pic li img{
+            width: auto;
+            height: 500px;
+            position: absolute;
+    		left: 50%;
+    		-webkit-transform: translateX(-50%);
+    		transform: translateX(-50%);
+    		-webkit-box-shadow: 0 0 0 200px #CCC;
+    		box-shadow: 0 0 0 200px #CCC;
+        }
+        .mark_left {
+            width: 400px;
+            height: 500px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: red;
+            filter: alpha(opacity:0);
+            opacity: 0;
+            z-index: 3000;
+        }
+
+        .mark_right {
+            width: 400px;
+            height: 500px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: green;
+            filter: alpha(opacity:0);
+            opacity: 0;
+            z-index: 3000;
+        }
+
+        .big_pic .prev {
+            width: 60px;
+            height: 60px;
+            background: url(images/PC/1.0/company/btn.gif) no-repeat;
+            position: absolute;
+            top: 260px;
+            left: 10px;
+            z-index: 3001;
+            cursor: pointer;
+            filter: alpha(opacity:0);
+            opacity: 0;
+        }
+
+        .big_pic .next {
+            width: 60px;
+            height: 60px;
+            background: url(images/PC/1.0/company/btn.gif) no-repeat 0 -60px;
+            position: absolute;
+            top: 260px;
+            right: 10px;
+            z-index: 3001;
+            cursor: pointer;
+            filter: alpha(opacity:0);
+            opacity: 0;
+        }
+
+        .big_pic .text {
+            position: absolute;
+            left: 10px;
+            top: 302px;
+            z-index: 3000;
+            color: #ccc;
+        }
+
+        .big_pic .length {
+            position: absolute;
+            right: 10px;
+            bottom: 4px;
+            z-index: 3000;
+            color: #ccc;
+        }
+
+        .big_pic .bg {
+            width: 400px;
+            height: 25px;
+            background: #000;
+            filter: alpha(opacity=60);
+            opacity: 0.6;
+            position: absolute;
+            z-index: 2999;
+            bottom: 0;
+            left: 0;
+        }
+
+        .small_pic {
+            width: 100%;
+            height: 94px;
+            position: relative;
+            top: 10px;
+            left: 0;
+            overflow: hidden;
+        }
+
+        .small_pic ul {
+            height: 94px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .small_pic li {
+            width: 120px;
+            height: 70px;
+            float: left;
+            padding-right: 10px;
+            background: url(images/PC/1.0/company/loading.gif) no-repeat center center;
+            cursor: pointer;
+            filter: alpha(opacity=60);
+            opacity: 0.6;
+        }
+
+        .small_pic img {
+            width: 120px;
+            height: 70px;
+        }
+    </style>
+</head>
+
+<body>
+<!--头部导航-->
+<header>
+    <div class="headerbox w1200">
+        <p class="headerbox-left">
+            <i class="icon-map-marker"></i>
+            <span>宁波</span>
+            <em><a href="">[切换]</a></em>
+        </p>
+        <ul class="headerbox-right">
+            <li><a href="">请登录</a></li>
+            <li><a href="">免费注册</a></li>
+            <li><a href="" class="red">我要装修</a></li>
+            <li><a href="">意见反馈</a></li>
+            <li><a href="">联系我们</a></li>
+        </ul>
+    </div>
+</header>
+<!--头部导航-->
+<!--    头部以下搜索、logo、联系方式-->
+<div class="search w1200">
+    <img src="images/PC/1.0/common/logo.png" alt="网站logo" class="search-logo">
+
+    <form action="" class="clearfix">
+        <div class="search-form">
+            <select name="sslx" id="sslx">
+                <option value="">装修公司</option>
+                <option value="">设计师</option>
+                <option value="">装修效果图</option>
+            </select>
+            <input type="text" placeholder="挑选您心仪的装修公司">
+            <input type="submit" value="搜索">
+        </div>
+        <img src="images/PC/1.0/common/contactphone.gif" alt="联系方式图片" class="search-contact">
+    </form>
+</div>
+<!--    头部以下搜索、logo、联系方式-->
+<!--    头部导航-->
+<nav class="header-nav w1200">
+    <ul>
+        <!--<li>比一比，哪家性价比更高<i class="icon-caret-down icon-2x"></i></li>-->
+        <li><a href="">首页</a></li>
+        <li><a href="" class="on">效果图<i class="icon-caret-down"></i></a>
+            <ul>
+                <li><a href="">家装美图</a></li>
+                <li><a href="">公装美图</a></li>
+                <li><a href="">精品专题</a></li>
+            </ul>
+        </li>
+        <li><a href="">量房设计<img src="images/PC/1.0/common/free.png" alt=""></a></li>
+        <li><a href="">报价神器<img src="images/PC/1.0/common/free.png" alt=""></a></li>
+        <li><a href="">装修公司</a></li>
+        <li><a href="">装修攻略<i class="icon-caret-down"></i></a>
+            <ul>
+                <li><a href="">装修流程</a></li>
+                <li><a href="">选材手册</a></li>
+                <li><a href="">装修风水</a></li>
+                <li><a href="">家具百科</a></li>
+                <li><a href="">装修资讯</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="mobilelogo">
+        <img src="images/PC/1.0/common/mobilelogo.png" alt="手机logo" id="wxewm">
+        <img src="images/PC/1.0/common/weixin.png" alt="微信二维码">
+    </div>
+</nav>
+<!--    头部导航-->
+<p class="crumbs w1200">当前位置：<span><a href="">装修公司</a></span>-&gt;<span><a href="">鲁班精工</a></span>-><span>家装案例</span></p>
+
+<div class="case_show_main clearfix w1200">
+    <div class="case_banner">
+        <h1 class="company_bt">【君临天下】 现代极简风 两室一厅室内家装案例</h1>
+        <div class="case_banner_show">
+            <div id="playimages" class="play">
+                <ul class="big_pic">
+                    <img src="images/PC/1.0/company/money.png" alt="" class="how_money">
+                    <div class="prev"></div>
+                    <div class="next"></div>
+                    <!--<div class="text">加载图片说明……</div>
+                    <div class="length">计算图片数量……</div>-->
+                    <a class="mark_left" href="javascript:;"></a>
+                    <a class="mark_right" href="javascript:;"></a>
+                    <!--<div class="bg"></div>	-->
+                    <li style="z-index:1;"><img src="images/PC/1.0/company/case.jpg"/></li>
+                    <li><img src="images/PC/1.0/xiaoguotu-index/service2.png"/></li>
+                    <li><img src="images/PC/1.0/xiaoguotu-index/service3.png"/></li>
+                    <li><img src="images/PC/1.0/xiaoguotu-index/service4.png"/></li>
+                    <li><img src="images/PC/1.0/xiaoguotu-index/service5.png"/></li>
+                </ul>
+                <div class="small_pic">
+                    <ul style="width:390px;">
+                        <li style="filter: 100; opacity: 1;"><img src="images/PC/1.0/company/case.jpg"/></li>
+                        <li><img src="images/PC/1.0/xiaoguotu-index/service2.png"/></li>
+                        <li><img src="images/PC/1.0/xiaoguotu-index/service3.png"/></li>
+                        <li><img src="images/PC/1.0/xiaoguotu-index/service4.png"/></li>
+                        <li><img src="images/PC/1.0/xiaoguotu-index/service5.png"/></li>
+                    </ul>
+                </div>
+            </div>
+            <!--End-->
+        </div>
+        <div class="more_case">
+            <h1 class="company_bt">其他案例 <span class="more_case_link"><a href="">更多MORE+</a></span></h1>
+
+            <div class="al_box">
+                <div class="al">
+                    <a href="">
+                        <img src="images/PC/1.0/xiaoguotu-index/service5.png" alt="">
+
+                        <p class="al_name">小区名</p>
+
+                        <p class="al_style"><span>现代</span><span>简约</span></p>
+
+                        <p class="al_type"><em>四居</em><em>全包</em><em>106m&sup2;</em></p>
+                    </a>
+                </div>
+                <div class="al">
+                    <a href="">
+                        <img src="images/PC/1.0/xiaoguotu-index/service5.png" alt="">
+
+                        <p class="al_name">小区名</p>
+
+                        <p class="al_style"><span>现代</span><span>简约</span></p>
+
+                        <p class="al_type"><em>四居</em><em>全包</em><em>106m&sup2;</em></p>
+                    </a>
+                </div>
+                <div class="al">
+                    <a href="">
+                        <img src="images/PC/1.0/xiaoguotu-index/service5.png" alt="">
+
+                        <p class="al_name">小区名</p>
+
+                        <p class="al_style"><span>现代</span><span>简约</span></p>
+
+                        <p class="al_type"><em>四居</em><em>全包</em><em>106m&sup2;</em></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--右侧盒子 start-->
+    <div class="right_box">
+        <div class="right_company_intro">
+            <img src="images/PC/1.0/company/company_logo.png" alt="" class="logo">
+            <p class="company_name">宁波鲁班精工装饰有限公司</p>
+            <p class="company_design_link"><a href="">申请免费设计</a></p>
+            <p><span>小区名：<em>君临天下</em></span><span>户型：<em>两室一厅</em></span></p>
+            <p><span>装修风格：<em>现代</em></span></p>
+            <p><span>面积：<em>100m&sup2;</em></span><span>设计师：<em>卢洁辉</em></span></p>
+            <p><span>装修方式：<em>半包</em></span><span>费用：<em>8万</em></span></p>
+        </div>
+        <div class="baojia_box">
+            <p class="leibie"><em class="on">免费设计</em><em>在线报价</em></p>
+            <ul>
+                <li>
+                    <div class="mfsj_box">
+                        <p class="biaoyu">不知道如何装修？<em>点击申请全知道！</em></p>
+
+                        <form action="">
+                            <input type="text" placeholder="输入您的称呼" class="shuru name">
+
+                            <p class="tishi">*请输入您真实的姓名</p>
+                            <input type="text" placeholder="输入您的手机号" class="shuru mobile">
+
+                            <p class="tishi">*请输入您真实的手机号码</p>
+
+                            <div class="my-select">
+                                <input type="text" value="选择省份" readonly class="select2 sheng">
+                                <ul class="select2">
+                                    <li data-value="1">浙江</li>
+                                    <li data-value="2">上海</li>
+                                    <li data-value="3">江苏</li>
+                                </ul>
+                            </div>
+                            <div class="my-select nomargin">
+                                <input type="text" value="选择市区" readonly class="select2 shi">
+                                <ul class="select2">
+                                    <li data-value="1">浙江</li>
+                                    <li data-value="2">上海</li>
+                                    <li data-value="3">江苏</li>
+                                </ul>
+                            </div>
+                            <p class="tishi">*请选择地址</p>
+
+                            <p class="zxzl"><span>家装</span><span>公装</span></p>
+
+                            <p class="tishi">*请输入装修种类</p>
+
+                            <p class="zxlx"><span>简装</span><span>精装</span><span>豪装</span></p>
+
+                            <p class="tishi">*请输入装修类型</p>
+                            <input type="text" placeholder="输入装修面积" class="shuru mianji"><em class="pfm">m&sup2;</em>
+
+                            <p class="tishi">*请输入装修面积</p>
+                            <input type="submit" value="立即申请" class="submit  mfsj_btn">
+
+                            <p class="cn">*我们承诺，本平台不收取任何费用，您的信息会得到严格的保护，请放心填写。</p>
+                        </form>
+                    </div>
+                </li>
+                <li style="display: none;">
+                    <div class="zxbj_box">
+                        <p class="biaoyu">不知道如何装修？<em>点击申请全知道！</em></p>
+
+                        <form action="">
+                            <p class="zxzl"><span>家装</span><span>公装</span></p>
+
+                            <p class="tishi">*请输入装修种类</p>
+
+                            <p class="zxlx"><span>简装</span><span>精装</span><span>豪装</span></p>
+
+                            <p class="tishi">*请输入装修类型</p>
+
+                            <div class="my-select">
+                                <input type="text" value="选择省份" readonly class="select2 sheng">
+                                <ul class="select2">
+                                    <li data-value="1">浙江</li>
+                                    <li data-value="2">上海</li>
+                                    <li data-value="3">江苏</li>
+                                </ul>
+                            </div>
+                            <div class="my-select nomargin">
+                                <input type="text" value="选择市区" readonly class="select2 shi">
+                                <ul class="select2">
+                                    <li data-value="1">浙江</li>
+                                    <li data-value="2">上海</li>
+                                    <li data-value="3">江苏</li>
+                                </ul>
+                            </div>
+                            <p class="tishi">*请选择地址</p>
+                            <input type="text" placeholder="输入装修面积" class="shuru mianji"><em class="pfm">m&sup2;</em>
+
+                            <p class="tishi">*请输入装修面积</p>
+                            <input type="text" placeholder="输入您的称呼" class="shuru name">
+
+                            <p class="tishi">*请输入您真实的姓名</p>
+                            <input type="text" placeholder="输入您的手机号" class="shuru mobile">
+
+                            <p class="tishi">*请输入您真实的手机号码</p>
+                            <input type="submit" value="获取报价" class="submit  zxbj_btn">
+
+                            <p class="cn">*我们承诺，本平台不收取任何费用，您的信息会得到严格的保护，请放心填写。</p>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="baojia_jg_box" style="display: none">
+            <h5>报价结果</h5>
+
+            <p class="biaoyu">您家毛坯房半包装修预估价<em class="total">0</em>万元</p>
+
+            <div class="bj_jieguo">
+                <p>材料费：<em class="clf">0</em>元</p>
+
+                <p>人工费：<em class="rgf">0</em>元</p>
+
+                <p>设计费：<em>0</em>元</p>
+            </div>
+            <p class="ljqb"><a href="">了解半包全包区别>></a></p>
+
+            <p class="link"><a href="">找装修公司>></a><a href="">装修效果图>></a></p>
+
+            <p class="cn">*稍后客服将会给您回电，向您详细介绍装修预算细节</p>
+        </div>
+    </div>
+    <!--右侧盒子 end-->
+</div>
+<div class="company_free_modal">
+    <h1>
+        填写一下信息 立即申请预约
+        <img src="images/PC/1.0/common/sjs_modal_close.png" alt="" class="close_btn">
+    </h1>
+    <form action="">
+        <input type="text" placeholder="请输入您的称呼">
+        <span>*请输入您的称呼</span>
+        <input type="text" placeholder="请输入手机号">
+        <span>*请输入正确的手机号</span>
+        <button class="order_btn">立即预约</button>
+    </form>
+    <p class="secrecy">*小蜜蜂装修网保证您填写的信息会得到严格保密</p>
+</div>
+<div class="company_order_result">
+    <h1>
+        <img src="images/PC/1.0/company/company_order_logo.png" alt="" class="logo">
+        恭喜您，申请成功
+        <img src="images/PC/1.0/common/sjs_modal_close.png" alt="" class="close_btn">
+    </h1>
+    <p class="contact">稍后小蜜蜂装修业主服务中心会联系您，请保持电话畅通。</p>
+    <p class="service">小蜜蜂免费提供以下服务</p>
+    <ul>
+        <li>
+            <img src="images/PC/1.0/company/company_order_1.png" alt="">
+            <span><em>01</em>免费量房</span>
+            <p>测量全屋面积、外墙尺寸，为装修设计、制定预算奠定基础。</p>
+        </li>
+        <li>
+            <img src="images/PC/1.0/company/company_order_2.png" alt="">
+            <span><em>01</em>免费量房</span>
+            <p>测量全屋面积、外墙尺寸，为装修设计、制定预算奠定基础。</p>
+        </li>
+        <li>
+            <img src="images/PC/1.0/company/company_order_3.png" alt="">
+            <span><em>01</em>免费量房</span>
+            <p>测量全屋面积、外墙尺寸，为装修设计、制定预算奠定基础。</p>
+        </li>
+    </ul>
+</div>
+<!--    页脚-->
+<footer>
+    <div class="footertop w1200 clearfix">
+        <div class="footer-left">
+            <p>
+                <span class="on">友情链接</span>
+                <span>热门城市</span>
+                <span>附近城市</span>
+                <em>友情链接&nbsp;<i class="icon-angle-right"></i></em>
+            </p>
+            <ul>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+                <li><a href="">移动房产网</a></li>
+            </ul>
+            <ul>
+                <li><a href="">小蜜蜂装修网</a></li>
+                <li><a href="">小蜜蜂装修网</a></li>
+                <li><a href="">小蜜蜂装修网</a></li>
+                <li><a href="">小蜜蜂装修网</a></li>
+                <li><a href="">小蜜蜂装修网</a></li>
+                <li><a href="">小蜜蜂装修网</a></li>
+                <li><a href="">小蜜蜂装修网</a></li>
+                <li><a href="">小蜜蜂装修网</a></li>
+                <li><a href="">小蜜蜂装修网</a></li>
+                <li><a href="">小蜜蜂装修网</a></li>
+                <li><a href="">小蜜蜂装修网</a></li>
+                <li><a href="">小蜜蜂装修网</a></li>
+                <li><a href="">小蜜蜂装修网</a></li>
+                <li><a href="">小蜜蜂装修网</a></li>
+                <li><a href="">小蜜蜂装修网</a></li>
+                <li><a href="">小蜜蜂装修网</a></li>
+                <li><a href="">小蜜蜂装修网</a></li>
+                <li><a href="">小蜜蜂装修网</a></li>
+                <li><a href="">小蜜蜂装修网</a></li>
+                <li><a href="">小蜜蜂装修网</a></li>
+                <li><a href="">小蜜蜂装修网</a></li>
+                <li><a href="">小蜜蜂装修网</a></li>
+                <li><a href="">小蜜蜂装修网</a></li>
+                <li><a href="">小蜜蜂装修网</a></li>
+            </ul>
+            <ul>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+                <li><a href="">中翰装饰</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <dl>
+                <dt>新浪微博</dt>
+                <dd><img src="images/PC/1.0/common/sina.jpg" alt=""></dd>
+            </dl>
+            <dl>
+                <dt>小蜜蜂微信号</dt>
+                <dd><img src="images/PC/1.0/common/weixin.png" alt=""></dd>
+            </dl>
+        </div>
+    </div>
+    <div class="footerbottom clearfix">
+        <p>
+            <span><a href="">公司简介</a></span>
+            <span><a href="">诚聘人才</a></span>
+            <span><a href="">联系我们</a></span>
+            <span><a href="">免责申明</a></span>
+            <span><a href="">广告服务</a></span>
+        </p>
+
+        <p>&copy;2016 xmfzxw.com 小蜜蜂-互联网装修领导者 保留所有权利</p>
+
+        <p>互联网装修领导者 小蜜蜂装修网 浙CP备15041897号-1</p>
+    </div>
+    <!-- 页脚下半部分 -->
+</footer>
+<!--    页脚-->
+</body>
+
+</html>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/PC/1.0/common.js"></script>
+<script type="text/javascript" src="js/PC/1.0/mfbj.js"></script>
+<script type="text/javascript" src="js/PC/1.0/select.js"></script>
+<script type="text/javascript" src="js/PC/1.0/company_case_show.js"></script>
+

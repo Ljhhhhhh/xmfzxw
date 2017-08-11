@@ -1,0 +1,113 @@
+.list_box{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+.zbxx_list{
+    float: left;
+    border: 1px solid #f2f2f2;
+    box-sizing: border-box;
+    width: 865px;
+    border-bottom: none;
+}
+.zbxx_list>ul{
+    display: inline-block;
+    width: 100%;
+    height:auto;
+}
+.zbxx_list>ul>li{
+    display: inline-block;
+    width: 100%;
+    height:auto;
+}
+.zbxx_list>ul>li>div{
+    width: 100%;
+    height:auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f2f2f2;
+}
+.zbxx_list>ul>li>div:hover{
+    background-color: #f8f8f8;
+}
+.zbxx_list>ul>li>div:hover p.zbxx_list_bt span{
+    border: 1px solid #f39800;
+    background-color: #f39800;
+}
+.zbxx_list>ul>li>div:hover p.zbxx_list_bt span a{
+    color: white;
+}
+.zbxx_list>ul>li>div:hover .yaoqiu{
+    display: block;
+}
+.zbxx_list p.zbxx_list_bt{
+    height: 45px;
+    font-size: 1.4em;
+    position: relative;
+    text-indent: 0.5em;
+    line-height: 40px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+}
+.zbxx_list p.zbxx_list_bt:before{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 15px;
+    width: 3px;
+    background-color: #009a59;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(0,-64%);
+    transform: translate(0,-64%);
+}
+.zbxx_list p.zbxx_list_bt em{
+    font-size: 1em;
+    color: #d77706;
+}
+.zbxx_list p.zbxx_list_bt span{
+    box-sizing: border-box;
+    right: 15px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0,-70%);
+    transform: translate(0,-70%);
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    padding: 3px 8px;
+    text-align: center;
+    line-height: 20px;
+    border: 1px solid #333;
+    color: #333;
+    text-indent: 0;
+}
+.zbxx_list p.zbxx_list_bt span a{
+    font-size: 1em;
+}
+.miaoshu{
+    width: 100%;
+    height:auto;
+}
+.miaoshu span{
+    color: #959595;
+    font-size: 14px;
+    display: inline-block;
+    margin-right:60px;
+    line-height: 30px;
+}
+.miaoshu span em{
+    color: #959595;
+    font-size: 14px;
+}
+.miaoshu .yaoqiu{
+    display: none;
+}
+.miaoshu .yaoqiu em{
+    color: #d04b4b;
+}
+.right_box{
+    float: right;
+    width: 320px;
+    height:auto;
+}

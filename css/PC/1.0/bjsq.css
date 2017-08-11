@@ -1,0 +1,465 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+em, i {
+    font-style: normal;
+}
+
+.clearfix {
+    clear: both;
+}
+
+em.on {
+    background-color: #2db879;
+    color: #FFF;
+}
+
+body {
+    background-image: url(../../../images/PC/1.0/bjsq/bg.png);
+    background-repeat: no-repeat;
+    background-position: 100% 25%;
+    background-size: 100% 123%;
+    width: 100%;
+    height: 700px;
+}
+
+header.header {
+    background-color: #FFF;
+}
+
+header {
+    width: 100%;
+    height: 120px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #bf8a58;
+    text-indent: 7em;
+    line-height: 50px;
+}
+
+header h4 {
+    font-size: 20px;
+    line-height: 40px;
+    color: #65c8d6;
+    text-indent: 13em;
+}
+
+/*header*/
+
+.formbox {
+    width: 1200px;
+    height: 90%;
+    background-color: #FFF;
+    margin: 0px auto;
+    position: relative;
+    border-radius: 5px;
+}
+
+.form-left {
+    width: 47%;
+    height: 68%;
+    float: left;
+    padding-left: 3%;
+    padding-top: 2%;
+}
+
+.form-left h6 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.form-left h6 span {
+    font-size: 0.6em;
+    color: #f68520;
+    text-indent: 1em;
+    display: inline-block;
+}
+
+form {
+    font-weight: 400;
+}
+
+form p {
+    width: 100%;
+    height: 50px;
+    line-height: 30px;
+}
+
+form p em {
+    display: inline-block;
+    width: 64px;
+    height: 30px;
+    font-size: 0.8em;
+    border-radius: 10px;
+    background-color: #e5e5e5;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    margin-right: 10px;
+}
+
+form p em:last-child {
+    margin-right: 0;
+}
+form p span.tishi{
+    display: none;
+    line-height: 20px;
+    margin-left: 60px;
+    color: red;
+}
+
+form p#szcs {
+    height: 100px;
+}
+
+select {
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    height: 30px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    text-indent: 0.5em;
+    background-image: url(../../../images/PC/1.0/bjsq/sanjiao.png);
+    background-repeat: no-repeat;
+    background-position: 95% center;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select:focus, input[type="text"]:focus, input[type="number"]:focus {
+    outline: none;
+}
+
+#province {
+    width: 260px;
+    margin-bottom: 10px;
+}
+
+#city, #area {
+    width: 120px;
+}
+
+#city {
+    margin-left: 65px;
+    margin-right: 15px;
+}
+
+#zxmj input[type='number'] {
+    position: relative;
+}
+
+#zxmj input[type='number'] + i {
+    position: absolute;
+    left: 315px;
+    font-size: 0.5em;
+    color: #aaa;
+}
+
+input[type="text"], input[type="number"] {
+    border: 1px solid #e5e5e5;
+    line-height: 30px;
+    text-indent: 1em;
+    border-radius: 10px;
+    width: 260px;
+}
+
+/*表单*/
+.form-right {
+    width: 47%;
+    height: 72%;
+    float: right;
+    padding-top: 2%;
+    position: relative;
+}
+
+.form-right h6 {
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-right h6 span {
+    color: #f68e3b;
+    font-size: 1.3em;
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    padding: 0 10px;
+}
+
+.jieguo {
+    border: 1px solid #e5e5e5;
+    width: 70%;
+    height: 180px;
+    margin: 20px auto 0px;
+    position: relative;
+}
+
+.jieguobox {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.jieguo p {
+    text-align: center;
+    line-height: 40px;
+}
+
+.jieguo p span {
+    color: #f68e3b;
+    font-size: 1.5em;
+    display: inline-block;
+    width: auto;
+    padding: 0 10px;
+    text-align: center;
+}
+
+#form-btn {
+    width: 89px;
+    height: 89px;
+    background-image: url(../../../images/PC/1.0/bjsq/button.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 0px #FFF, 0 0 30px 25px #0db76f;
+    -webkit-animation: boxshadow 3s infinite;
+    animation: boxshadow 3s infinite;
+}
+
+@-webkit-keyframes boxshadow {
+    from {
+        box-shadow: 0 0 5px 0px #FFF, 0 0 20px 15px #28b77b;
+    }
+    to {
+        box-shadow: 0 0 5px 35px #FFF, 0 0 20px 25px #a0dec4;
+    }
+}
+
+/*结果*/
+footer {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 120px;
+    margin-top: 20px;
+}
+
+footer .footerleft {
+    width: 40%;
+    height: 100%;
+    margin-left: 80px;
+    font-size: 22px;
+    float: left;
+    margin-top: 30px;
+}
+
+footer .footerleft p {
+    line-height: 40px;
+    color: #44c5af;
+}
+
+footer .footerleft p span {
+    color: #f68e3b;
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+}
+
+footer .footerright {
+    width: 47%;
+    height: 90px;
+    float: right;
+    position: relative;
+    overflow: hidden;
+    top:-25px;
+}
+
+footer .footerright ul {
+    width: 100%;
+    height: auto;
+    color: #999;
+    font-size: 14px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+footer .footerright ul li {
+    float: left;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+
+footer .footerright ul li em, footer .footerright ul li i {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/*底部*/
+.jieguo .shuoming {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: #f68e3b;
+    font-size: 0.7em;
+    line-height: 30px;
+    text-indent: 1em;
+    display: none;
+}
+
+#zxbtn {
+    position: absolute;
+    width: 70%;
+    right: 70px;
+    display: none;
+}
+
+#zxbtn p {
+    text-align: right;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+#zxbtn p a {
+    color: #c7732d;
+    font-size: 14px;
+}
+
+#zxbtn span {
+    width: 43%;
+    height: 30px;
+    display: inline-block;
+    margin-left: 20px;
+    float: right;
+}
+
+#zxbtn span a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
+    font-size: 0.7em;
+    color: #FFF;
+    background-color: #f68e3b;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/*后续*/
+.footer-bq {
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.footer-bq .link {
+    width: 800px;
+    height: 30px;
+    margin: 15px auto;
+    line-height: 30px;
+    border: 1px dashed #AAA;
+}
+
+.footer-bq .link span {
+    font-size: 16px;
+}
+
+.footer-bq .link a {
+    display: inline-block;
+    float: right;
+    padding: 0 10px;
+    line-height: 30px;
+    height: 30px;
+    background-color: #44c5af;
+    color: #FFF;
+    font-size: 1.3em;
+    animation: link 1s infinite linear;
+}
+
+@keyframes link {
+    0% {
+        background-color: #44c566;
+    }
+    50% {
+        background-color: #35bec9;
+    }
+    100% {
+        background-color: #44c566;
+    }
+}
+
+.fblink {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding-top: 25px;
+    border-top: 17px solid #000;
+    border-image: url(../../../images/PC/1.0/bjsq/fblinkborder.png) 30 30 round;
+}
+
+.fblink span {
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #65c8d6;
+    font-family: YouYuan, Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+.fblink span img {
+    position: absolute;
+    left: -100px;
+    top: -30px;
+}
+
+.fblink a.link {
+    display: block;
+    width: 220px;
+    height: 40px;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgb(191, 138, 88);
+    color: #FaFaFa;
+    font-size: 18px;
+    animation: link 1s infinite ease;
+    border-radius: 5px;
+}

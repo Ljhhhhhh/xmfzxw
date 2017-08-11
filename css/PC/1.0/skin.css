@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+
+/* base common style */
+html,body{padding:0; margin:0;}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin: 0; padding: 0 }
+body, button, input, select, textarea { font: 12px/1.5 "Microsoft YaHei", 微软雅黑,\9ed1\4f53,\5b8b\4f53, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu; color:#666 }
+h1, h2, h3, h4, h5, h6 { font-size: 100% }
+address, cite, dfn, em, var { font-style: normal }
+ul, ol, dl { list-style: none }
+a { text-decoration: none !important; outline: none ;font-family:"Microsoft YaHei", 微软雅黑,\9ed1\4f53,\5b8b\4f53, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu;cursor: pointer;}
+img { border: 0 }
+button, input, select, textarea { font-size:100%;font-family:"Microsoft YaHei", 微软雅黑,\9ed1\4f53,\5b8b\4f53, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu;outline: none;}
+table { border-collapse: collapse; border-spacing: 0 }
+header, footer, article, section, nav, menu, hgroup, figcaption, figure {display: block;}
+/* common bg */
+h1,h2,h3,h4,h5,h6,section,figure,article,abbr,address,aside,audio,b,blockquote,caption,cite,code,dd,del,details,dfn,dl,dt,fieldest,footer,header,html,iframe,ins,kbd,lable,legend,mark,menu,nav,object,ol,pre,q,samp,small,sub,summary,sup,tbody,tfoot,th,thead,var,video,ul,li{ margin:0; padding:0; border:0; font-size:100%; font-weight:400; vertical-align:baseline; background:0 0; display:block;}
+input,textarea,keygen,button{
+	margin:0em;
+	text-rendering:auto;
+	color:inherit;
+	letter-spacing:normal;
+	word-spacing:normal;
+	text-transform:none;
+	text-indent:0px;
+	text-shadow:none;
+	display:inline-block;
+	text-align:start;
+}
+input[type='button']{ text-align:center;}
+.form_error span{background-image:url(../images/global.png);}/*通用PNG小图标集合*/
+
+
+
+.clearfloat{clear:both;height:0;font-size: 0;line-height: 0; list-style:none;}
+.warp{width:1200px;height:auto; margin:0 auto; position:relative;}
+.center{margin:0 auto; }
+.l{float:left;display:inline;}
+.r{float:right;display:inline;}
+
+.header{width:100%;height:56px; border-bottom:2px solid #009a59; margin:0 auto;}
+.header .logo{width:93px;height:36px; margin:10px 0 0 0; float:left; display:block;}
+.header .nav{width:500px;height:36px; margin:10px 0 0 10px; float:left; display:inline;}
+.header .nav ul li{width:80px;height:36px;text-align:center;  float:left;}
+.header .nav ul li a{width:100%;height:36px; line-height:36px; font-weight:bold;float:left;}
+.header .nav ul li a:link,.header .nav ul li a:visited{ color:#000;}
+.header .nav ul li a:hover{ color:#d0a81f;}
+.header .nav ul li.on a:link,.header .nav ul li.on a:visited{color:#f0003f;}
+
+.header .header-right{width:auto; height:14px; margin:21px 0 0 0; float:right;}
+.header .header-right em{width:auto; line-height:14px; padding:0 8px; float:left;}
+.header .header-right a{width:auto; line-height:14px; padding:0 8px; float:left;}
+.header .header-right a:link, .header .header-right a:visited{ color:#4b494a;}
+.header .header-right a:hover{ color:#dc1915;}
+.header .header-right .line{width:1px;height:14px; background-color:#d0d0d0; float:left;}
+
+/*效果图详情*/
+.ufoot{width:100%;height:155px; border-top:3px solid #009a59; background:#1d283c; margin:0 auto 0 auto;}
+.ufoot p{width:100%;height:40px; text-align:center; color:#fff; font-size:14px; margin:37px 0 0 0;}
+.ufoot p a:link,.ufoot p a:visited{ color:#fff;}
+.ufoot p a:hover{ color:#F00;}
+.ufoot span{width:100%; margin:0 auto; text-align:center;font-size:14px; line-height:18px; color:#fff; display:block;}
