@@ -13,8 +13,7 @@ $(document).ready(function () {
             $("#zxzl").find("span.tishi").css("display", "block");
         } else {
             var zxzl = $("#zxzl em.on").text();
-        }
-        ;
+        };
         if (!$("#zxdc em").hasClass("on")) {
             flag = 1;
             $("#zxdc").find("span.tishi").css("display", "block");

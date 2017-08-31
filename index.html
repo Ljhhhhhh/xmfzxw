@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="public/PC/1.0/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/PC/1.0/Font-Awesome-3.2.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="public/PC/1.0/animate.min.css">
+    <link rel="stylesheet" href="css/PC/1.0/index.css">
+    <title>首页</title>
+</head>
+<body>
+<!--header start-->
+<div class="container-fluid header">
+    <div class="w1200">
+        <div class="col-xs-3">
+            <span class="icon-map-marker"></span>
+            宁波[<a href="">余姚</a>、<a href="">慈溪</a>、<a href="">奉化</a>]&nbsp;[<a href="" class="choose">选择</a>]
+        </div>
+        <ul class="pull-right">
+            <li><a href="">登录</a></li>
+            <li><a href="">注册</a></li>
+            <li><a href="">联系我们:400-1675-980</a></li>
+            <li><a href="">关于我们</a></li>
+        </ul>
+    </div>
+</div>
+<!--header end-->
+<!--menu start-->
+<div class="container-fluid menu_box">
+    <div class="menu">
+        <img class="menu_logo" src="images/PC/1.0/logo.png">
+        <ul class="menu_list">
+            <li><a href="" class="active">首页</a></li>
+            <li><a href="">效果图&nbsp;&nbsp;<span class="icon-caret-down"></span></a>
+                <ul>
+                    <li><a href="">家居美图</a></li>
+                    <li><a href="">公装效果图</a></li>
+                </ul>
+            </li>
+            <li><a href="">0元量房&nbsp;&nbsp;<span class="icon-caret-down"></span></a>
+                <ul>
+                    <li><a href="">装修流程</a></li>
+                    <li><a href="">选材手册</a></li>
+                    <li><a href="">装修风水</a></li>
+                    <li><a href="">家居百科</a></li>
+                    <li><a href="">装修资讯</a></li>
+                </ul>
+            </li>
+            <li><a href="">报价神器</a></li>
+            <li><a href="">装修公司</a></li>
+            <li><a href="">装修攻略</a></li>
+        </ul>
+        <form class="form-inline menu_form">
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="装修公司/问题/攻略/效果图">
+                    <div class="input-group-addon" id="menu_search"><span class="icon-search"></span></div>
+                    <button type="submit" style="display: none;" id="menu_search_button"></button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!--menu end-->
+<!--banner start-->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner banner_box" role="listbox">
+        <div class="item active">
+            <a href="http://www.baidu1.com"><img src="images/PC/1.0/index_banner_bg.png"></a>
+        </div>
+        <div class="item">
+            <a href="http://www.baidu2.com"><img src="images/PC/1.0/index_banner2.png"></a>
+        </div>
+        <div class="item">
+            <a href="http://www.baidu3.com"><img src="images/PC/1.0/index_banner2.png"></a>
+        </div>
+        <div class="banner">
+            <div class="b1">
+                <div id="b1_mfyf">
+                    <em></em>
+                    <h4>免费量房验房
+                        <p>已有<strong>8341719</strong>位业主预约量房</p>
+                    </h4>
+                    <span class="icon-angle-right icon-3x"></span>
+                </div>
+                <div id="b1_mfsj">
+                    <em></em>
+                    <h4>免费设计
+                        <p><strong>免费</strong>获取3份设计，优选最佳方案</p>
+                    </h4>
+                    <span class="icon-angle-right icon-3x"></span>
+                </div>
+                <div id="b1_mfbj">
+                    <em></em>
+                    <h4>免费报价
+                        <p>免费获取<strong>3份</strong>报价清单，超高性价比</p>
+                    </h4>
+                    <span class="icon-angle-right icon-3x"></span>
+                </div>
+            </div>
+            <div class="b2">
+                <form action="" class="form-group">
+                    <h4>已有<strong>8341719</strong>位业主预约量房</h4>
+                    <input type="text" class="form-control" placeholder="请输入您的姓名" name="name">
+                    <input type="text" class="form-control" placeholder="请输入您的手机号" name="mobile">
+                    <div class="form-inline">
+                        <select class="form-control" name="province">
+                            <option selected disabled value="0">选择省份</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                        <select class="form-control" name="city">
+                            <option selected disabled value="0">选择市区</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="装修面积" name="area">
+                        <div class="input-group-addon">m&sup2;</div>
+                    </div>
+                    <input type="submit" class="btn btn-success form-control" value="立即申请" id="banner_submit">
+                    <p class="promise"><span class="icon-star text-danger">&nbsp;</span>此服务完全免费，不会向您收取任何费用。</p>
+                </form>
+            </div>
+            <div class="b3">
+                <h1>什么是免费量房</h1>
+                <span></span>
+                <h2>一键申请</h2>
+                <h3><em class="text-danger">免费</em>量房验房</h3>
+                <p>专业仪器曲察测量，空鼓，脱皮，漏水裂经首房屋质品问题一网打尽，通过精准量房做出准确设计和报价，让装修更省钱</p>
+            </div>
+        </div>
+    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!--banner end-->
+<!--links start-->
+<div class="container link_box wow fadeInUp">
+    <div class="row">
+        <a href="" class="col-xs-3">
+            <em></em>
+            <h4>找装修公司</h4>
+            <p>口碑公司放心挑</p>
+        </a>
+        <a href="" class="col-xs-3">
+            <em></em>
+            <h4>户型设计</h4>
+            <p>免费获取3份设计方案</p>
+        </a>
+        <a href="" class="col-xs-3">
+            <em></em>
+            <h4>装修计算器</h4>
+            <p>算算装修需要多少钱</p>
+        </a>
+        <a href="" class="col-xs-3">
+            <em></em>
+            <h4>全面验房</h4>
+            <p>全面检测房屋质量</p>
+        </a>
+    </div>
+</div>
+<!--links end-->
+<!--company start-->
+<div class="container-fluid company_box">
+    <div class="company">
+        <h2 class="lm_title wow fadeInUp">找宁波装修公司</h2>
+        <h5 class="lm_title_small wow fadeInUp">优质装修公司随你挑，打造最满意的新家</h5>
+        <ul class="company_area" id="company_area">
+            <li><a href="11" class="active">热门</a></li>
+            <li><a href="12">海曙</a></li>
+            <li><a href="13">江北</a></li>
+            <li><a href="14">鄞州</a></li>
+            <li><a href="15">北仑</a></li>
+            <li><a href="16">慈溪</a></li>
+            <li><a href="17">全部</a></li>
+        </ul>
+        <div id="company_list">
+            <ul>
+                <li>
+                    <a href="" class="recommend">
+                        <div class="mentou">
+                            <img data-original="images/PC/1.0/company_mentou_temp.png" alt="">
+                        </div>
+                        <img data-original="images/PC/1.0/company_logo_temp.png" alt="" class="company_logo">
+                        <div class="describe">
+                            <h5>装修公司名字巴拉巴拉</h5>
+                            <p><span>设计方案：<em>55</em></span><span>已服务业主：<em>115</em></span></p>
+                            <b class="btn btn-default">免费设计</b>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="recommend">
+                        <div class="mentou">
+                            <img data-original="images/PC/1.0/company_mentou_temp.png" alt="">
+                        </div>
+                        <img data-original="images/PC/1.0/company_logo_temp.png" alt="" class="company_logo">
+                        <div class="describe">
+                            <h5>装修公司名字巴拉巴拉</h5>
+                            <p><span>设计方案：<em>55</em></span><span>已服务业主：<em>115</em></span></p>
+                            <b class="btn btn-default">免费设计</b>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="praise">
+                        <div class="mentou">
+                            <img data-original="images/PC/1.0/company_mentou_temp.png" alt="">
+                        </div>
+                        <img data-original="images/PC/1.0/company_logo_temp.png" alt="" class="company_logo">
+                        <div class="describe">
+                            <h5>装修公司名字巴拉巴拉</h5>
+                            <p><span>设计方案：<em>55</em></span><span>已服务业主：<em>115</em></span></p>
+                            <b class="btn btn-default">免费设计</b>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="hot">
+                        <div class="mentou">
+                            <img data-original="images/PC/1.0/company_mentou_temp.png" alt="">
+                        </div>
+                        <img data-original="images/PC/1.0/company_logo_temp.png" alt="" class="company_logo">
+                        <div class="describe">
+                            <h5>装修公司名字巴拉巴拉</h5>
+                            <p><span>设计方案：<em>55</em></span><span>已服务业主：<em>115</em></span></p>
+                            <b class="btn btn-default">免费设计</b>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--company end-->
+<!--owner start-->
+<div class="owner_box">
+    <h2 class="lm_title wow fadeInUp">宁波最新申请业主</h2>
+    <h5 class="lm_title_small wow fadeInUp">已有<strong>8341719</strong>位业主申请装修服务</h5>
+    <div class="owner">
+        <div class="col-xs-2">
+            宁波最新申请
+        </div>
+        <div class="col-xs-10">
+            <!--<p><span>申请时间</span><span>地区</span><span>所在小区</span><span>面积</span><span>装修类型</span><span>装修方式</span><span>查看详情</span></p>-->
+                <ul class="owner_list" id="owner_list">
+                    <li><span>2017-8-01</span><span>海曙区</span><span>天一家园</span><span>88m&sup2;</span><span>住宅公寓</span><span>半包</span><span><a href="" class="btn btn-danger">查看详情</a></span></li>
+                    <li><span>2017-8-02</span><span>海曙区</span><span>天一家园</span><span>88m&sup2;</span><span>住宅公寓</span><span>半包</span><span><a href="" class="btn btn-danger">查看详情</a></span></li>
+                    <li><span>2017-8-03</span><span>海曙区</span><span>天一家园</span><span>88m&sup2;</span><span>住宅公寓</span><span>半包</span><span><a href="" class="btn btn-danger">查看详情</a></span></li>
+                    <li><span>2017-8-04</span><span>海曙区</span><span>天一家园</span><span>88m&sup2;</span><span>住宅公寓</span><span>半包</span><span><a href="http://www.baidu.com" class="btn btn-danger">查看详情</a></span></li>
+                    <li><span>2017-8-05</span><span>海曙区</span><span>天一家园</span><span>88m&sup2;</span><span>住宅公寓</span><span>半包</span><span><a href="" class="btn btn-danger">查看详情</a></span></li>
+                    <li><span>2017-8-06</span><span>海曙区</span><span>天一家园</span><span>88m&sup2;</span><span>住宅公寓</span><span>半包</span><span><a href="" class="btn btn-danger">查看详情</a></span></li>
+                    <li><span>2017-8-07</span><span>海曙区</span><span>天一家园</span><span>88m&sup2;</span><span>住宅公寓</span><span>半包</span><span><a href="" class="btn btn-danger">查看详情</a></span></li>
+                    <li><span>2017-8-08</span><span>海曙区</span><span>天一家园</span><span>88m&sup2;</span><span>住宅公寓</span><span>半包</span><span><a href="" class="btn btn-danger">查看详情</a></span></li>
+                    <li><span>2017-8-09</span><span>海曙区</span><span>天一家园</span><span>88m&sup2;</span><span>住宅公寓</span><span>半包</span><span><a href="" class="btn btn-danger">查看详情</a></span></li>
+                </ul>
+        </div>
+    </div>
+    <div class="apply">
+        <div class="col-xs-2">我要申请</div>
+        <form class="col-xs-10" id="apply" action="123">
+            <div class="col-xs-3">
+                <div class="form-group">
+                    <label>姓名：</label>
+                    <input type="text" class="form-control" placeholder="姓名" name="apply_name">
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="form-group">
+                    <label>手机号</label>
+                    <input type="text" class="form-control" placeholder="手机号" name="apply_mobile">
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="form-group">
+                    <label>服务：</label>
+                    <select class="form-control" name="apply_service">
+                        <option>0元量房</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <input type="submit" class="btn btn-info form-control" id="apply_submit" value="立即申请">
+            </div>
+        </form>
+    </div>
+</div>
+<!--owner end-->
+<!--picture start-->
+<div class="picture_box container-fluid">
+    <div class="picture">
+        <h2 class="lm_title wow fadeInUp">装修效果图</h2>
+        <h5 class="lm_title_small wow fadeInUp">海量装修美图，带来装修灵感</h5>
+        <ul class="type_control" id="type_control">
+            <li class="active" data-target="pictute_home"><em>家居美图</em></li>
+            <li data-target="pictute_office"><em>公装美图</em></li>
+            <li data-target="pictute_all"><em>全部美图</em></li>
+        </ul>
+        <div class="row" id="picture_home">
+            <a href="" class="col-xs-6 picture_big">
+                <img data-original="images/PC/1.0/picture_1_temp.png" alt="">
+                <p>(XX市)XX小区X室X厅XX风格效果图</p>
+            </a>
+            <div class="col-xs-6">
+                <div class="row">
+                    <a href="" class="col-xs-6 picture_small">
+                        <img data-original="images/PC/1.0/picture_2_temp.png" alt="">
+                        <p>(XX市)XX小区X室X厅XX风格效果图</p>
+                    </a>
+                    <a href="" class="col-xs-6 picture_small">
+                        <img data-original="images/PC/1.0/picture_2_temp.png" alt="">
+                        <p>(XX市)XX小区X室X厅XX风格效果图</p>
+                    </a>
+                    <a href="" class="col-xs-6 picture_small">
+                        <img data-original="images/PC/1.0/picture_2_temp.png" alt="">
+                        <p>(XX市)XX小区X室X厅XX风格效果图</p>
+                    </a>
+                    <a href="" class="col-xs-6 picture_small">
+                        <img data-original="images/PC/1.0/picture_2_temp.png" alt="">
+                        <p>(XX市)XX小区X室X厅XX风格效果图</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="picture_office">
+            <a href="" class="col-xs-6 picture_big">
+                <img data-original="images/PC/1.0/picture_1_temp.png" alt="">
+                <p>(XX市)XX小区X室X厅XX风格效果图</p>
+            </a>
+            <div class="col-xs-6">
+                <div class="row">
+                    <a href="" class="col-xs-6 picture_small">
+                        <img data-original="images/PC/1.0/picture_2_temp.png" alt="">
+                        <p>(XX市)XX小区X室X厅XX风格效果图</p>
+                    </a>
+                    <a href="" class="col-xs-6 picture_small">
+                        <img data-original="images/PC/1.0/picture_2_temp.png" alt="">
+                        <p>(XX市)XX小区X室X厅XX风格效果图</p>
+                    </a>
+                    <a href="" class="col-xs-6 picture_small">
+                        <img data-original="images/PC/1.0/picture_2_temp.png" alt="">
+                        <p>(XX市)XX小区X室X厅XX风格效果图</p>
+                    </a>
+                    <a href="" class="col-xs-6 picture_small">
+                        <img data-original="images/PC/1.0/picture_2_temp.png" alt="">
+                        <p>(XX市)XX小区X室X厅XX风格效果图</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="picture_all">
+            <a href="" class="col-xs-6 picture_big">
+                <img data-original="images/PC/1.0/picture_1_temp.png" alt="">
+                <p>(XX市)XX小区X室X厅XX风格效果图</p>
+            </a>
+            <div class="col-xs-6">
+                <div class="row">
+                    <a href="" class="col-xs-6 picture_small">
+                        <img data-original="images/PC/1.0/picture_2_temp.png" alt="">
+                        <p>(XX市)XX小区X室X厅XX风格效果图</p>
+                    </a>
+                    <a href="" class="col-xs-6 picture_small">
+                        <img data-original="images/PC/1.0/picture_2_temp.png" alt="">
+                        <p>(XX市)XX小区X室X厅XX风格效果图</p>
+                    </a>
+                    <a href="" class="col-xs-6 picture_small">
+                        <img data-original="images/PC/1.0/picture_2_temp.png" alt="">
+                        <p>(XX市)XX小区X室X厅XX风格效果图</p>
+                    </a>
+                    <a href="" class="col-xs-6 picture_small">
+                        <img data-original="images/PC/1.0/picture_2_temp.png" alt="">
+                        <p>(XX市)XX小区X室X厅XX风格效果图</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--picture end-->
+<!--Fitment start-->
+<div class="fitment_box">
+    <h2 class="lm_title wow fadeInUp">学装修</h2>
+    <h5 class="lm_title_small wow fadeInUp">学习装修经验，装修知识全知道</h5>
+    <div class="fitment">
+        <div class="fitment_menu" id="fitment_menu">
+            <div class="active">
+                <h3><span class="icon-book">&nbsp;</span>装修攻略</h3>
+                <p>Decoration Raiders</p>
+            </div>
+            <div>
+                <h3><span class="icon-zoom-in">&nbsp;</span>选材技巧</h3>
+                <p>Selection Skills</p>
+            </div>
+            <div>
+                <h3><span class="icon-tasks">&nbsp;</span>家居百科</h3>
+                <p>Home Encyclopedia</p>
+            </div>
+
+        </div>
+        <div class="fitment_main">
+            <div class="in_main" id="fitment_gonglue">
+                <a href="" class="in_main_up">
+                    <div class="col-xs-6">
+                        <img data-original="images/PC/1.0/picture_1_temp.png" alt="">
+                    </div>
+                    <div class="col-xs-6">
+                        <h4>【装修攻略一】卧室衣柜设计尺寸大揭秘</h4>
+                        <p>在室内设计中，衣柜并不只是一个衣柜，衣柜的设计合理与否直接关系了整体空间不能。在室内设计中，衣柜并不只是一个衣柜，衣柜的设计合理与否直接关系了整体空间不能。在室内设计中，衣柜并不只是一个衣柜，衣柜的设计合理与否直接关系了整体空间不能。在室内设计中，衣柜并不只是一个衣柜，衣柜的设计合理与否直接关系了整体空间不能。在室内设计中，衣柜并不只是一个衣柜，衣柜的设计合理与否直接关系了整体空间不能。在室内设计中，衣柜并不只是一个衣柜，衣柜的设计合理与否直接关系了整体空间不能。</p>
+                    </div>
+                </a>
+                <div class="in_main_down">
+                    <a href="" class="col-xs-4">
+                        <img data-original="images/PC/1.0/picture_1_temp.png" alt="">
+                        <p>厨具安装需要哪些细节</p>
+                    </a>
+                    <a href="" class="col-xs-4">
+                        <img data-original="images/PC/1.0/picture_1_temp.png" alt="">
+                        <p>厨具安装需要哪些细节</p>
+                    </a>
+                    <a href="" class="col-xs-4">
+                        <img data-original="images/PC/1.0/picture_1_temp.png" alt="">
+                        <p>厨具安装需要哪些细节</p>
+                    </a>
+                </div>
+            </div>
+            <div class="in_main" id="fitment_jiqiao">
+                <a href="" class="in_main_up">
+                    <div class="col-xs-6">
+                        <img data-original="images/PC/1.0/picture_1_temp.png" alt="">
+                    </div>
+                    <div class="col-xs-6">
+                        <h4>【装修攻略二】卧室衣柜设计尺寸大揭秘</h4>
+                        <p>在室内设计中，衣柜并不只是一个衣柜，衣柜的设计合理与否直接关系了整体空间不能。在室内设计中，衣柜并不只是一个衣柜，衣柜的设计合理与否直接关系了整体空间不能。在室内设计中，衣柜并不只是一个衣柜，衣柜的设计合理与否直接关系了整体空间不能。在室内设计中，衣柜并不只是一个衣柜，衣柜的设计合理与否直接关系了整体空间不能。在室内设计中，衣柜并不只是一个衣柜，衣柜的设计合理与否直接关系了整体空间不能。在室内设计中，衣柜并不只是一个衣柜，衣柜的设计合理与否直接关系了整体空间不能。</p>
+                    </div>
+                </a>
+                <div class="in_main_down">
+                    <a href="" class="col-xs-4">
+                        <img data-original="images/PC/1.0/picture_1_temp.png" alt="">
+                        <p>厨具安装需要哪些细节</p>
+                    </a>
+                    <a href="" class="col-xs-4">
+                        <img data-original="images/PC/1.0/picture_1_temp.png" alt="">
+                        <p>厨具安装需要哪些细节</p>
+                    </a>
+                    <a href="" class="col-xs-4">
+                        <img data-original="images/PC/1.0/picture_1_temp.png" alt="">
+                        <p>厨具安装需要哪些细节</p>
+                    </a>
+                </div>
+            </div>
+            <div class="in_main" id="fitment_baike">
+                <a href="" class="in_main_up">
+                    <div class="col-xs-6">
+                        <img data-original="images/PC/1.0/picture_1_temp.png" alt="">
+                    </div>
+                    <div class="col-xs-6">
+                        <h4>【装修攻略三】卧室衣柜设计尺寸大揭秘</h4>
+                        <p>在室内设计中，衣柜并不只是一个衣柜，衣柜的设计合理与否直接关系了整体空间不能。在室内设计中，衣柜并不只是一个衣柜，衣柜的设计合理与否直接关系了整体空间不能。在室内设计中，衣柜并不只是一个衣柜，衣柜的设计合理与否直接关系了整体空间不能。在室内设计中，衣柜并不只是一个衣柜，衣柜的设计合理与否直接关系了整体空间不能。在室内设计中，衣柜并不只是一个衣柜，衣柜的设计合理与否直接关系了整体空间不能。在室内设计中，衣柜并不只是一个衣柜，衣柜的设计合理与否直接关系了整体空间不能。</p>
+                    </div>
+                </a>
+                <div class="in_main_down">
+                    <a href="" class="col-xs-4">
+                        <img data-original="images/PC/1.0/picture_1_temp.png" alt="">
+                        <p>厨具安装需要哪些细节</p>
+                    </a>
+                    <a href="" class="col-xs-4">
+                        <img data-original="images/PC/1.0/picture_1_temp.png" alt="">
+                        <p>厨具安装需要哪些细节</p>
+                    </a>
+                    <a href="" class="col-xs-4">
+                        <img data-original="images/PC/1.0/picture_1_temp.png" alt="">
+                        <p>厨具安装需要哪些细节</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Fitment end-->
+<!--service start-->
+<div class="container-fluid service_box">
+    <div class="service">
+        <h2 class="lm_title wow fadeInUp">三大特色服务</h2>
+        <h5 class="lm_title_small wow fadeInUp">提供专属您的特色服务</h5>
+        <div class="row">
+            <a href="" class="col-xs-4 wow fadeInLeft">
+                <img data-original="images/PC/1.0/service1.png" alt="">
+            </a>
+            <a href="" class="col-xs-4 wow fadeInUp">
+                <img data-original="images/PC/1.0/service3.png" alt="">
+            </a>
+            <a href="" class="col-xs-4 wow fadeInRight">
+                <img data-original="images/PC/1.0/service5.png" alt="">
+            </a>
+        </div>
+    </div>
+</div>
+<!--service end-->
+<div style="width: 100%;height: 500px"></div>
+<!--modal-->
+<div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">提示：</h4>
+            </div>
+            <div class="modal-body">
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--modal-->
+<script src="js/PC/1.0/jquery-1.11.2.min.js"></script>
+<script src="public/PC/1.0/bootstrap/js/bootstrap.min.js"></script>
+<script src="public/PC/1.0/jquery.lazyload.min.js"></script>
+<script src="public/PC/1.0/wow.min.js"></script>
+<script src="js/PC/1.0/index.js"></script>
+</body>
+</html>

@@ -15,25 +15,6 @@ $(document).ready(function(){
     $(".footer-left p span").mouseover(function(){
         $(this).addClass("on").siblings().removeClass("on");
         var index=$(this).index();
-        // $(".footer-left ul").eq(index).css("display","block").siblings("ul").css("display","none");
         $(".footer-left ul").eq(index).stop(true).slideDown(500).siblings("ul").stop(true).slideUp(500);
     });
-//     function click() {
-//         return false;
-//     }
-//
-//     function click1() {
-//         if (event.button == 2) {
-//             return false;
-//         }
-//     }
-//
-//     function CtrlKeyDown() {
-//         if (event.ctrlKey) {
-//             return false;
-//         }
-//     }
-//     document.onkeydown = CtrlKeyDown;
-//     document.onselectstart = click;
-//     document.onmousedown = click1;
  })
