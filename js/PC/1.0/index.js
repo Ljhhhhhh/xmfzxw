@@ -21,7 +21,7 @@ $(function () {
     var banner_ms = [
         [//免费验房
             "<h4>已有<strong>8341719</strong>位业主预约量房</h4>",//b2_h4
-            "<span class='icon-star text-danger'>&nbsp;</span>此服务完全免费，不会向您收取任何费用。",//b2_promiss
+            "<span class='glyphicon glyphicon-star text-danger'></span>此服务完全免费，不会向您收取任何费用。",//b2_promiss
             "什么是免费量房？",//b3_h1
             "一键申请",//b3_h2
             "<em class='text-danger'>免费</em>量房验房",//b3_h3
@@ -30,7 +30,7 @@ $(function () {
         ],
         [//免费设计
             "<h4>已有<strong>7891572</strong>位业主申请免费设计</h4>",//b2_h4:
-            "<span class='icon-star text-danger'>&nbsp;</span>明星设计师量房设计，修改到满意为止。",//b2_promiss:
+            "<span class='glyphicon glyphicon-star text-danger'></span>明星设计师量房设计，修改到满意为止。",//b2_promiss:
             "什么是免费设计？",//b3_h1:
             "<em class='text-danger'>3</em>套设计方案",//b3_h2:
             "<em class='text-danger'>免费</em>PK",//b3_h3:
@@ -39,7 +39,7 @@ $(function () {
         ],
         [//免费报价
             "<h4>已有<strong>10915352</strong>位业主申请免费报价</h4>",//b2_h4:
-            "<span class='icon-star text-danger'>&nbsp;</span>装修管家严格审核，避免增项漏项。",//b2_promiss:
+            "<span class='glyphicon glyphicon-star text-danger'></span>装修管家严格审核，避免增项漏项。",//b2_promiss:
             "什么是免费报价？",//b3_h1:
             "<em class='text-danger'>详细</em>报价清单",//b3_h2:
             "<em class='text-danger'>公开</em>透明",//b3_h3:
@@ -179,53 +179,25 @@ $(function () {
     });
     $("#type_control").find("li").click(function () {
         var index=$(this).index();
+        var pictures=$(".picture_box").find(".pictures");
         $(this).addClass("active").siblings("li").removeClass("active");
-        switch (index){
-            case 0:
-                $("#picture_home").show();
-                $("#picture_office").hide();
-                $("#picture_all").hide();
-                scrollDo();
-                break;
-            case 1:
-                $("#picture_home").hide();
-                $("#picture_office").show();
-                $("#picture_all").hide();
-                scrollDo();
-                break;
-            case 2:
-                $("#picture_home").hide();
-                $("#picture_office").hide();
-                $("#picture_all").show();
-                scrollDo();
-                break;
-        };
+        pictures.eq(index).show().siblings(".pictures").hide();
+        scrollDo();
     });
     //效果图切换
     $("#fitment_menu").find("div").click(function () {
         var index=$(this).index();
         $(this).addClass("active").siblings('div').removeClass("active");
-        switch (index){
-            case 0:
-                $("#fitment_gonglue").show();
-                $("#fitment_jiqiao").hide();
-                $("#fitment_baike").hide();
-                scrollDo();
-                break;
-            case 1:
-                $("#fitment_gonglue").hide();
-                $("#fitment_jiqiao").show();
-                $("#fitment_baike").hide();
-                scrollDo();
-                break;
-            case 2:
-                $("#fitment_gonglue").hide();
-                $("#fitment_jiqiao").hide();
-                $("#fitment_baike").show();
-                scrollDo();
-                break;
-        };
+        var fitment_main=$(".fitment_main").find(".in_main");
+        fitment_main.eq(index).show().siblings(".in_main").hide();
+        scrollDo();
     });//学装修切换
+    var footer_down_ul=$(".footer_down").find("ul");
+    $("#footer_type_control").find("span").click(function () {
+       var index=$(this).index();
+       $(this).addClass("active").siblings("span").removeClass("active");
+       footer_down_ul.eq(index).show().siblings("ul").hide();
+    });
     $("img").lazyload({effect: "show"});//图片懒加载 图片不添加src属性，添加data-original属性为src的值即可。
     new WOW().init();
 });

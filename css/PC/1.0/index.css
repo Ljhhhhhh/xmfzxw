@@ -470,9 +470,43 @@ li {
   display: inline-block;
   margin: 0 30px 0 0;
   font-size: 14px;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 #company_list ul li:last-child {
   margin: 0;
+}
+#company_list ul li:before,
+#company_list ul li:after {
+  display: block;
+  content: '';
+  width: 30%;
+  height: 90%;
+  position: absolute;
+  bottom: 5px;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#company_list ul li:before {
+  left: 15px;
+}
+#company_list ul li:after {
+  right: 15px;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+#company_list ul li:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+#company_list ul li:hover:before,
+#company_list ul li:hover:after {
+  background-color: #999;
+  -webkit-box-shadow: 0 0 20px 5px #999;
+          box-shadow: 0 0 20px 5px #999;
 }
 #company_list ul li a {
   display: block;
@@ -483,15 +517,10 @@ li {
   position: relative;
   color: #333;
   text-decoration: none;
+  z-index: 3;
   border: 1px solid #e5e5e5;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-}
-#company_list ul li a:hover {
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
-  -webkit-box-shadow: 0 3px 3px 0 #CCC;
-          box-shadow: 0 3px 3px 0 #CCC;
 }
 #company_list ul li a:hover b {
   color: #009a59;
@@ -723,8 +752,8 @@ li {
   font-size: 14px;
   line-height: 217px;
 }
-.picture_box .picture #picture_office,
-.picture_box .picture #picture_all {
+.picture_box .picture .pictures:nth-child(5),
+.picture_box .picture .pictures:nth-child(6) {
   display: none;
 }
 #type_control {
@@ -817,6 +846,9 @@ li {
 }
 .fitment_box .fitment .fitment_menu div h3 {
   margin: 0;
+}
+.fitment_box .fitment .fitment_menu div h3 span {
+  font-size: 20px;
 }
 .fitment_box .fitment .fitment_menu div:nth-child(1).active:after {
   background-color: #facd89;
@@ -914,8 +946,8 @@ li {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.fitment_box .fitment #fitment_baike,
-.fitment_box .fitment #fitment_jiqiao {
+.fitment_box .fitment .fitment_main .in_main:nth-child(2),
+.fitment_box .fitment .fitment_main .in_main:nth-child(3) {
   display: none;
 }
 .service_box {
@@ -935,4 +967,108 @@ li {
   width: 100%;
   height: auto;
   border: 1px solid #999;
+}
+.footer_on {
+  width: 1170px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.footer_on .col-xs-2 {
+  height: 100%;
+}
+.footer_on .col-xs-2 h3 {
+  margin: 10px auto;
+}
+.footer_on .col-xs-2 ul {
+  width: 95%;
+  height: auto;
+  border-left: 1px solid #CCC;
+  float: right;
+}
+.footer_on .col-xs-2 ul li {
+  line-height: 30px;
+  text-indent: 2em;
+}
+.footer_on .col-xs-2 ul li a {
+  color: #666;
+}
+.footer_on .col-xs-2 ul li a:hover {
+  color: #333;
+}
+.footer_on .col-xs-6 {
+  height: 100%;
+  padding: 0;
+  text-align: center;
+}
+.footer_on .col-xs-6 .col-xs-10 {
+  border: 1px solid #CCC;
+  border-top: none;
+  border-bottom: none;
+  padding: 15px;
+  margin: 0 auto;
+}
+.footer_on .col-xs-6 .col-xs-10 p {
+  font-size: 24px;
+  color: #009a59;
+  margin-top: 15px;
+}
+.footer_on .col-xs-6 .col-xs-10 a {
+  display: inline-block;
+  border: 2px solid #009a59;
+  background-color: #f3f3f3;
+  padding: 5px 40px;
+  color: #333;
+  font-size: 16px;
+}
+.footer_on .col-xs-6 .col-xs-10 a:hover {
+  background-color: #009a59;
+  color: #FFF;
+}
+.footer_down {
+  margin: 20px auto;
+}
+.footer_down #footer_type_control {
+  width: 100%;
+  line-height: 30px;
+  border-bottom: 1px solid #f3f3f3;
+}
+.footer_down #footer_type_control span {
+  display: inline-block;
+  padding-right: 30px;
+  cursor: pointer;
+}
+.footer_down #footer_type_control span.active {
+  background: -webkit-gradient(linear, right top, left top, from(#009a59), to(#009a59)) no-repeat bottom left;
+  background: linear-gradient(to left, #009a59, #009a59) no-repeat bottom left;
+  background-size: 70% 2px;
+}
+.footer_down #footer_type_control a {
+  float: right;
+}
+.footer_down ul {
+  display: none;
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+.footer_down ul li {
+  display: inline-block;
+  padding: 0 15px;
+  line-height: 30px;
+}
+.footer_down ul li a {
+  color: #666;
+}
+.footer_down ul li a:hover {
+  color: #333;
+}
+.footer_down ul:nth-child(2) {
+  display: block;
+}
+p.banquan {
+  line-height: 25px;
+  margin: 0;
+  padding: 15px auto;
+  text-align: center;
 }
