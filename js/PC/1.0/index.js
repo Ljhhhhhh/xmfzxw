@@ -177,12 +177,20 @@ $(function () {
             }
         })
     });
-    $("#type_control").find("li").click(function () {
-        var index=$(this).index();
-        var pictures=$(".picture_box").find(".pictures");
-        $(this).addClass("active").siblings("li").removeClass("active");
-        pictures.eq(index).show().siblings(".pictures").hide();
-        scrollDo();
+    $("#picture_type_control").find("ul").find("li").find("a").click(function(e) {
+        e.preventDefault();
+        $(this).addClass('active').parent().siblings().find('a').removeClass('active').parent().parent().siblings('ul').find('li').find("a").removeClass('active');
+        var href=$(this).attr('href');
+        $.ajax({
+            url:href,
+            type:'post',
+            success:function(){
+
+            },
+            error:function(){
+
+            }
+        })
     });
     //效果图切换
     $("#fitment_menu").find("div").click(function () {

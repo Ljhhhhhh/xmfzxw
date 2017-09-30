@@ -11,7 +11,8 @@ li {
     list-style-type: none;
 }
 
-em, i {
+em,
+i {
     font-style: normal;
 }
 
@@ -55,6 +56,7 @@ header h4 {
     color: #65c8d6;
     text-indent: 13em;
 }
+
 
 /*header*/
 
@@ -116,7 +118,8 @@ form p em {
 form p em:last-child {
     margin-right: 0;
 }
-form p span.tishi{
+
+form p span.tishi {
     display: none;
     line-height: 20px;
     margin-left: 60px;
@@ -144,7 +147,9 @@ select::-ms-expand {
     display: none;
 }
 
-select:focus, input[type="text"]:focus, input[type="number"]:focus {
+select:focus,
+input[type="text"]:focus,
+input[type="number"]:focus {
     outline: none;
 }
 
@@ -153,7 +158,8 @@ select:focus, input[type="text"]:focus, input[type="number"]:focus {
     margin-bottom: 10px;
 }
 
-#city, #area {
+#city,
+#area {
     width: 120px;
 }
 
@@ -166,14 +172,15 @@ select:focus, input[type="text"]:focus, input[type="number"]:focus {
     position: relative;
 }
 
-#zxmj input[type='number'] + i {
+#zxmj input[type='number']+i {
     position: absolute;
     left: 315px;
     font-size: 0.5em;
     color: #aaa;
 }
 
-input[type="text"], input[type="number"] {
+input[type="text"],
+input[type="number"] {
     border: 1px solid #e5e5e5;
     line-height: 30px;
     text-indent: 1em;
@@ -181,7 +188,9 @@ input[type="text"], input[type="number"] {
     width: 260px;
 }
 
+
 /*表单*/
+
 .form-right {
     width: 47%;
     height: 72%;
@@ -264,7 +273,9 @@ input[type="text"], input[type="number"] {
     }
 }
 
+
 /*结果*/
+
 footer {
     width: 100%;
     height: 100px;
@@ -300,7 +311,7 @@ footer .footerright {
     float: right;
     position: relative;
     overflow: hidden;
-    top:-25px;
+    top: -25px;
 }
 
 footer .footerright ul {
@@ -323,12 +334,15 @@ footer .footerright ul li {
     line-height: 30px;
 }
 
-footer .footerright ul li em, footer .footerright ul li i {
+footer .footerright ul li em,
+footer .footerright ul li i {
     display: inline-block;
     margin-right: 20px;
 }
 
+
 /*底部*/
+
 .jieguo .shuoming {
     position: absolute;
     bottom: 0px;
@@ -378,7 +392,9 @@ footer .footerright ul li em, footer .footerright ul li i {
     border-radius: 5px;
 }
 
+
 /*后续*/
+
 .footer-bq {
     width: 100%;
     padding: 30px 0;
